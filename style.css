@@ -1,19 +1,73 @@
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
 }
+
 .myIframe {
-    position: relative;
-    padding-bottom: 65.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: auto; 
-    -webkit-overflow-scrolling:touch;
-    border: solid black 1px;
-} 
+    position                  : relative;
+    padding-bottom            : 25%;
+    padding-top               : 30px;
+    height                    : 0;
+    overflow                  : auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 .myIframe iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 50%;
+    height     : 100%;
+    margin-left: 25%;
+}
+
+@media only screen and (max-width: 480px) {
+    .myIframe {
+        position                  : relative;
+        padding-bottom            : 50%;
+        padding-top               : 30px;
+        height                    : 0;
+        overflow                  : auto;
+        -webkit-overflow-scrolling: touch;
+        /* border                 : solid black 1px; */
+    }
+
+    .myIframe iframe {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        width   : 100%;
+        height  : 100%;
+        margin  : 0;
+    }
+}
+
+.image {
+    width       : 100%;
+    max-width   : 600px;
+    height      : auto;
+    display     : block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+body {
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+h1{
+color:#383CC1
+}
+h2, h3{
+    color:#5DA3FA;
+}
+h4,h5,h6{
+    color:#B4161B;
 }
