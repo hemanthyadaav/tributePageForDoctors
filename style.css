@@ -5,6 +5,17 @@ h4,
 h5,
 h6 {
     text-align: center;
+    line-height:2rem; 
+    font-family: 'Cairo', sans-serif;
+    word-wrap: break-word;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
 }
 
 .myIframe {
@@ -15,6 +26,9 @@ h6 {
     overflow                  : auto;
     -webkit-overflow-scrolling: touch;
 }
+blockquote{
+    font-family: 'Roboto', sans-serif;
+}
 
 .myIframe iframe {
     position   : absolute;
@@ -24,6 +38,14 @@ h6 {
     height     : 100%;
     margin-left: 25%;
 }
+
+h1:hover{
+    color: red;
+}
+h2:hover{
+color: #383CC1;
+}
+
 
 @media only screen and (max-width: 480px) {
     .myIframe {
@@ -63,7 +85,7 @@ body {
 }
 
 h1{
-color:#383CC1
+color:#B4161B;
 }
 h2, h3{
     color:#5DA3FA;
@@ -74,3 +96,31 @@ h4,h5,h6{
 footer{
     text-align: center;
 }
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none; 
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
